@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*
+font-family(headings): Poppins ,Weights: 400, 600
+font-family(body): Open Sans ,Weights: 400
+screens : Mobile: 375px, Desktop: 1440px
+colors :
+    - Violet: hsl(257, 40%, 49%)
+    - Soft Magenta: hsl(300, 69%, 71%)
+*/
+:root{
+    --bg-violet: hsl(257, 40%, 49%);
+    --clr-soft-magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 1440px;
+    background-color: var(--bg-violet);
+    background-image: url("images/bg-desktop.svg");
+    background-size:85%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    cursor: pointer;
+}
+.header img{
+    height: 200px;
+    width: 200px;
+}
+.container{
+    position: absolute;
+    top: 25%;
+    left: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 3rem;
+}
+.left-section img{
+    height: 450px;
+}
+.right-section{
+    width: 30%;
+    padding: 2.5rem 0;
+    color: white;
+}
+.right-section .heading{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.right-section .heading,.register-btn{
+    font-family: 'Poppins',sans-serif;
+}
+.right-section .desc{
+    font-family: 'Open Sans';
+    width: 100%;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+.right-section .register-btn{
+    font-weight: 400;
+    cursor: pointer;
+    width: 38%;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    color: var(--bg-violet);
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.3);
+}
+.right-section .register-btn:hover{
+    background-color: var(--clr-soft-magenta);
+    color: #ffffff;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.social-list{
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(105%) contrast(105%);
+}
+.social-icon:hover{
+    filter: invert(80%) sepia(31%) saturate(1982%) hue-rotate(240deg) brightness(92%) contrast(97%);
+}
