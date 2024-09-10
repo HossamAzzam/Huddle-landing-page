@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt]("/myDesign/Screenshot 2024-09-10 122143.png")
+![alt](/myDesign/Screenshot 2024-09-10 122143.png)
 
 ### Links
 
